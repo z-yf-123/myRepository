@@ -11,4 +11,7 @@ module.exports = {
       .set('views', resolve('@/views'));
     //排除icons目录中svg文件处理
   },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/myRepository/'
+    : '/'
 }
